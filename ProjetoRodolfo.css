@@ -1,0 +1,128 @@
+* {font-family: 'Montserrat', sans-serif;
+   margin: 0; /* Cada navegador colocar um valor de 9(padding e margin) diferente, então zeramos eles para ter um padrão. */
+   padding: 0;
+   box-sizing: border-box;} /* O box-sizing com o valor border-box faz 
+                                com que o navegador não calcule a dimensão de um
+                                elemento somando bordas e margens com altura e 
+                                 largura. Facilita para que tenhamos tudo do tamanho 
+                                 que queremos colocar. */
+
+
+.logo-image{ /* colocamos (.) pq é uma (class)*/
+    width: 568px;
+    height: 500px;
+    margin-left: 125px; /* Posicionar margem do lado esquerdo */
+    display: inline-block; /* para que minha imagem fique na mesma linha que meus textos, com essa propriedade eles ficam na mesma linha e ainda consigo controlar o tamanho/ -Elemento em linha, porém com características igual block/ -Altura e largura podem ser alterados.   */   }
+
+
+    header{ /* Esse header é como se fosse uma caixa, sendo assim fica mais fácil de estilizarmos ele, mundando só a margem */
+    margin-top: 44px ;
+    margin-left: 76px;
+    margin-bottom: 144px;
+}    
+
+.link-header{ 
+    font-weight: 600; /* (font-weight)= é a font mais fina ou mais grossa. */
+    font-size: 24px; /* (font-size)= Tamanho da fonte. */
+    line-height: 29px; /* Altura da Linha */ 
+    cursor: pointer;
+    margin-right: 23px; /* Espaço entre cada um seguinte do outro */
+
+color: #989D9C;}
+
+.button-header{
+    background: #665AE1;
+    border-radius: 20.5px; /* Borda arredondada*/ 
+    width: 130px;
+    height: 41px;
+    border: none; /* Sem a bordinha preta */
+    font-weight: 600; /* (font-weight)= é a font mais fina ou mais grossa. */
+    font-size: 24px; /* (font-size)= Tamanho da fonte. */
+    line-height: 29px;  /* Altura da Linha */
+
+color: #FFFFFF;}
+
+section{
+    display: inline-block; /* para que minha imagem fique na mesma linha que meus textos, com essa propriedade eles ficam na mesma linha e ainda consigo controlar o tamanho/ -Elemento em linha, porém com características igual block/ -Altura e largura podem ser alterados.   */ 
+    margin-left: 86px; 
+   }
+
+h1{ 
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;  
+    color: #515151;  
+}
+
+h2{
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;}
+
+p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #848484;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;}    
+
+.button-2{
+    background: #ADFF00;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    width: 239px;
+    height: 64px;
+    border: none;}
+
+        /* Responsividade */
+
+@media screen and (max-width: 800px){
+.logo-image{
+    width: 354px;
+
+    height: 317px;
+    margin-left: 27px;
+    position: absolute;
+    top: 149px;}
+
+    header{display: none;}
+    p{display: none;}
+
+    h1{font-size: 51px;
+        line-height: 61px;
+        width: 263px;
+        height: 52px;
+        position: absolute;
+        top: 490px;}
+
+    button {
+        position: absolute;
+        left: 76px;
+        top: 603px;}
+        
+    h2{
+        width: 232px;
+        height: 37px;
+        font-size: 30px;
+        line-height: 37px;
+        position: absolute;
+        top: 549px;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
